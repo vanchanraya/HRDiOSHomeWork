@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example_AutoLayout_Question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-3m-3KK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0P-jX-yA5">
+                                <rect key="frame" x="26" y="608" width="323" height="34"/>
+                                <color key="backgroundColor" red="0.94251943010000006" green="0.89193442690000002" blue="0.04334763925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Mtu-LL-COb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.19618385729999999" green="0.56565738340000005" blue="0.20563649240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrz-7Q-1hU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lti-01-QLq">
+                                <rect key="frame" x="137.5" y="42" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7Vh-SJ-hMf"/>
+                                    <constraint firstAttribute="height" constant="100" id="tQa-WV-MnH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okY-Xg-lSu">
+                                <rect key="frame" x="16" y="321" width="343" height="25.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G0P-jX-yA5" secondAttribute="bottom" constant="25" id="2rh-N5-rQe"/>
+                            <constraint firstItem="dh7-3m-3KK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4HM-N0-T83"/>
+                            <constraint firstItem="Lti-01-QLq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="22" id="4Ri-Rz-qp1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G0P-jX-yA5" secondAttribute="trailing" constant="26" id="7xb-hH-iJC"/>
+                            <constraint firstItem="dh7-3m-3KK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Oj-BJ-NhT"/>
+                            <constraint firstItem="okY-Xg-lSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FcW-r1-5Rm"/>
+                            <constraint firstItem="G0P-jX-yA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="H3j-bz-7HY"/>
+                            <constraint firstItem="Lti-01-QLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LPo-eY-2A7"/>
+                            <constraint firstItem="dh7-3m-3KK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R1u-8V-Ltx"/>
+                            <constraint firstItem="okY-Xg-lSu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VHh-P1-ONx"/>
+                            <constraint firstItem="okY-Xg-lSu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WBH-Ak-Zfd"/>
+                            <constraint firstItem="dh7-3m-3KK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WcV-sQ-f16"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="okY-Xg-lSu" id="t2r-cM-5Y2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth" width="912.67608642578125" height="912.67608642578125"/>
+        <image name="logo" width="720" height="720"/>
+    </resources>
+</document>
